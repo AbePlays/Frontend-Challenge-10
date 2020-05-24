@@ -1,7 +1,7 @@
 @import "variables";
 
 .testimonial {
-  padding: 10rem 5rem 0 5rem;
+  padding: 10rem 5rem 8rem 5rem;
   background-color: $backgroundBlue;
   z-index: 0;
 
@@ -41,7 +41,7 @@
       .footer {
         img {
           border-radius: 50%;
-          width: 2.5rem;
+          width: 2.2rem;
           float: left;
           margin-right: 1rem;
         }
@@ -55,6 +55,63 @@
             margin-bottom: 0;
           }
         }
+      }
+    }
+  }
+
+  .contact-card {
+    transform: translateY(15rem);
+
+    background-color: $cardBlue;
+    color: white;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 5rem;
+    text-align: center;
+
+    h1 {
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      max-width: 40rem;
+      margin: 0 auto 2rem auto;
+      font-size: 0.8rem;
+    }
+
+    input {
+      min-width: 30rem;
+      height: 3rem;
+      border-radius: 30px;
+      margin-right: 2rem;
+      border: none;
+      padding-left: 3rem;
+      font-size: 0.8rem;
+
+      &::placeholder {
+        color: grey;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      border-radius: 30px;
+      min-width: 15rem;
+      height: 3rem;
+      color: white;
+      font-family: "Raleway", sans-serif;
+      font-size: 0.9rem;
+      background: linear-gradient(to right, $ctaCyan, $ctaBlue);
+      border-style: none;
+
+      &:hover {
+        background: $ctaBlue;
       }
     }
   }
