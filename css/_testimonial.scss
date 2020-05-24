@@ -1,0 +1,61 @@
+@import "variables";
+
+.testimonial {
+  padding: 10rem 5rem 0 5rem;
+  background-color: $backgroundBlue;
+  z-index: 0;
+
+  .cards {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+
+    &:first-child {
+      &::before {
+        content: "";
+        background-image: url("../images/bg-quotes.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 80px;
+        height: 60px;
+        position: absolute;
+        left: 2.2rem;
+        top: -40px;
+        z-index: 1;
+      }
+    }
+
+    .card {
+      z-index: 2;
+      padding: 2.5rem 1.2rem 1rem 1.2rem;
+      background-color: $cardBlue;
+      color: white;
+
+      p {
+        max-width: 20rem;
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+      }
+
+      .footer {
+        img {
+          border-radius: 50%;
+          width: 2.5rem;
+          float: left;
+          margin-right: 1rem;
+        }
+
+        .footer-text {
+          h4 {
+            font-size: 0.7rem;
+          }
+          p {
+            font-size: 0.6rem;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

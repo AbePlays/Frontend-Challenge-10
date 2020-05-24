@@ -168,6 +168,65 @@ nav .links a:hover {
   margin-left: 0.3rem;
 }
 
+.testimonial {
+  padding: 10rem 5rem 0 5rem;
+  background-color: #181f2a;
+  z-index: 0;
+}
+
+.testimonial .cards {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.testimonial .cards:first-child::before {
+  content: "";
+  background-image: url("../images/bg-quotes.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 80px;
+  height: 60px;
+  position: absolute;
+  left: 2.2rem;
+  top: -40px;
+  z-index: 1;
+}
+
+.testimonial .cards .card {
+  z-index: 2;
+  padding: 2.5rem 1.2rem 1rem 1.2rem;
+  background-color: #202a3c;
+  color: white;
+}
+
+.testimonial .cards .card p {
+  max-width: 20rem;
+  font-size: 0.8rem;
+  margin-bottom: 2rem;
+}
+
+.testimonial .cards .card .footer img {
+  border-radius: 50%;
+  width: 2.5rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.testimonial .cards .card .footer .footer-text h4 {
+  font-size: 0.7rem;
+}
+
+.testimonial .cards .card .footer .footer-text p {
+  font-size: 0.6rem;
+  margin-bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
