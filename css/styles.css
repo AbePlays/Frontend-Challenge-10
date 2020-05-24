@@ -234,13 +234,11 @@ nav .links a:hover {
 }
 
 .testimonial {
-  padding: 10rem 5rem 8rem 5rem;
+  padding: 10rem 5rem 1rem 5rem;
   background-color: #181f2a;
-  z-index: 0;
 }
 
 .testimonial .cards {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,27 +247,15 @@ nav .links a:hover {
           justify-content: space-evenly;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-}
-
-.testimonial .cards:first-child::before {
-  content: "";
-  background-image: url("../images/bg-quotes.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 80px;
-  height: 60px;
-  position: absolute;
-  left: 2.2rem;
-  top: -40px;
-  z-index: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .testimonial .cards .card {
-  z-index: 2;
   padding: 2.5rem 1.2rem 1rem 1.2rem;
   background-color: #202a3c;
   color: white;
+  margin-bottom: 5rem;
 }
 
 .testimonial .cards .card p {
@@ -295,13 +281,13 @@ nav .links a:hover {
 }
 
 .testimonial .contact-card {
-  -webkit-transform: translateY(15rem);
-          transform: translateY(15rem);
+  -webkit-transform: translateY(10rem);
+          transform: translateY(10rem);
   background-color: #202a3c;
   color: white;
   max-width: 60rem;
   margin: 0 auto;
-  padding: 2rem 5rem;
+  padding: 4rem 5rem 3rem 5rem;
   text-align: center;
 }
 
@@ -362,6 +348,28 @@ nav .links a:hover {
 
 .testimonial .contact-card button:hover {
   background: #339ecc;
+}
+
+@media (max-width: 1100px) {
+  .testimonial .contact-card {
+    padding: 4rem 1rem;
+  }
+  .testimonial .contact-card input {
+    width: 85%;
+    min-width: 0;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .testimonial .contact-card button {
+    min-width: 0;
+    width: 85%;
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial .contact-card h1 {
+    font-size: 1.5rem;
+  }
 }
 
 .contact {

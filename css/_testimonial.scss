@@ -1,37 +1,20 @@
 @import "variables";
 
 .testimonial {
-  padding: 10rem 5rem 8rem 5rem;
+  padding: 10rem 5rem 1rem 5rem;
   background-color: $backgroundBlue;
-  z-index: 0;
 
   .cards {
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-    &:first-child {
-      &::before {
-        content: "";
-        background-image: url("../images/bg-quotes.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        width: 80px;
-        height: 60px;
-        position: absolute;
-        left: 2.2rem;
-        top: -40px;
-        z-index: 1;
-      }
-    }
+    justify-content: space-around;
 
     .card {
-      z-index: 2;
       padding: 2.5rem 1.2rem 1rem 1.2rem;
       background-color: $cardBlue;
       color: white;
+      margin-bottom: 5rem;
 
       p {
         max-width: 20rem;
@@ -61,13 +44,12 @@
   }
 
   .contact-card {
-    transform: translateY(15rem);
-
+    transform: translateY(10rem);
     background-color: $cardBlue;
     color: white;
     max-width: 60rem;
     margin: 0 auto;
-    padding: 2rem 5rem;
+    padding: 4rem 5rem 3rem 5rem;
     text-align: center;
 
     h1 {
@@ -113,6 +95,35 @@
 
       &:hover {
         background: $ctaBlue;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .testimonial {
+    .contact-card {
+      padding: 4rem 1rem;
+      input {
+        width: 85%;
+        min-width: 0;
+        margin-right: 0;
+        margin-bottom: 2rem;
+      }
+
+      button {
+        min-width: 0;
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonial {
+    .contact-card {
+      h1 {
+        font-size: 1.5rem;
       }
     }
   }
