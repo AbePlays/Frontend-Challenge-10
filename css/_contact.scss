@@ -35,6 +35,7 @@
     .card2 {
       .card2-item {
         display: flex;
+        margin-bottom: -1rem;
 
         img {
           margin-right: 1rem;
@@ -93,6 +94,54 @@
             color: #c32aa3;
           }
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1050px) {
+  .contact {
+    padding: 13rem 2rem 6rem 2rem;
+    .cards {
+      .card3 {
+        .card3-item {
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .contact {
+    .cards {
+      display: block;
+
+      .card1 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .card2 {
+        margin-bottom: 4rem;
+      }
+
+      .card3 {
+        display: block;
+        .card3-item {
+          margin-bottom: 3rem;
+          ul {
+            li {
+              width: fit-content;
+            }
+          }
+        }
+      }
+
+      .social {
+        text-align: center;
       }
     }
   }

@@ -422,6 +422,7 @@ nav .links a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: -1rem;
 }
 
 .contact .cards .card2 .card2-item img {
@@ -473,6 +474,42 @@ nav .links a:hover {
 
 .contact .cards .social span .fa-instagram:hover {
   color: #c32aa3;
+}
+
+@media (max-width: 1050px) {
+  .contact {
+    padding: 13rem 2rem 6rem 2rem;
+  }
+  .contact .cards .card3 .card3-item:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .contact .cards {
+    display: block;
+  }
+  .contact .cards .card1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .contact .cards .card2 {
+    margin-bottom: 4rem;
+  }
+  .contact .cards .card3 {
+    display: block;
+  }
+  .contact .cards .card3 .card3-item {
+    margin-bottom: 3rem;
+  }
+  .contact .cards .card3 .card3-item ul li {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .contact .cards .social {
+    text-align: center;
+  }
 }
 
 * {
