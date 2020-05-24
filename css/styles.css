@@ -183,7 +183,7 @@ nav .links a:hover {
 }
 
 .moto .moto-text {
-  padding: 0 5rem;
+  margin-left: 5rem;
   color: white;
 }
 
@@ -208,6 +208,29 @@ nav .links a:hover {
 
 .moto .moto-text a img {
   margin-left: 0.3rem;
+}
+
+@media (max-width: 1150px) {
+  .moto {
+    padding: 7rem 2rem 0 2rem;
+    display: block;
+  }
+  .moto .moto-img {
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .moto .moto-img img {
+    height: 100%;
+    width: 100%;
+  }
+  .moto .moto-text {
+    margin-left: 0;
+    width: 100%;
+    text-align: left;
+  }
+  .moto .moto-text h1 {
+    max-width: 100%;
+  }
 }
 
 .testimonial {
