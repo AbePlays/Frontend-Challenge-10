@@ -206,6 +206,10 @@ nav .links a:hover {
   color: #65e2d9;
 }
 
+.moto .moto-text a:hover {
+  opacity: 0.7;
+}
+
 .moto .moto-text a img {
   margin-left: 0.3rem;
 }
