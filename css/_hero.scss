@@ -48,3 +48,13 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 1rem 3rem 5rem 3rem;
+
+    button {
+      width: 80%;
+    }
+  }
+}
