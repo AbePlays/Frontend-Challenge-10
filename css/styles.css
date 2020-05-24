@@ -153,6 +153,21 @@ nav .links a:hover {
   font-size: 0.8rem;
 }
 
+@media (max-width: 900px) {
+  .features {
+    padding: 5rem 2rem 0 2rem;
+  }
+  .features .features-group {
+    margin: 0;
+  }
+  .features .features-group:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .features .features-group .feature {
+    margin: 2rem 1rem;
+  }
+}
+
 .moto {
   padding: 10rem 5rem 0 5rem;
   display: -webkit-box;

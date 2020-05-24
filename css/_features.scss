@@ -36,3 +36,21 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .features {
+    padding: 5rem 2rem 0 2rem;
+
+    .features-group {
+      margin: 0;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
+
+      .feature {
+        margin: 2rem 1rem;
+      }
+    }
+  }
+}
