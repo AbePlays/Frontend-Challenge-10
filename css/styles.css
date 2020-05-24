@@ -33,6 +33,57 @@ nav .links a:hover {
   text-decoration: underline;
 }
 
+.hero {
+  background-color: #1c2431;
+  color: white;
+}
+
+.hero .hero-img {
+  max-width: 44rem;
+  margin: 0 auto;
+}
+
+.hero .hero-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.hero h1 {
+  text-align: center;
+  margin: 3rem auto 0 auto;
+  max-width: 44rem;
+  font-size: 2rem;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero p {
+  margin: 1rem auto 0 auto;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 30rem;
+  line-height: 1.5;
+}
+
+.hero button {
+  cursor: pointer;
+  display: block;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  margin: 2rem auto 0 auto;
+  width: 15rem;
+  height: 3rem;
+  background: -webkit-gradient(linear, left top, right top, from(#65e2d9), to(#339ecc));
+  background: linear-gradient(to right, #65e2d9, #339ecc);
+  border-style: none;
+  border-radius: 1.5rem;
+}
+
+.hero button:hover {
+  background: #339ecc;
+}
+
 * {
   margin: 0;
   padding: 0;

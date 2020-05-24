@@ -1,0 +1,49 @@
+@import "variables";
+
+.hero {
+  background-color: $introBlue;
+  color: white;
+  .hero-img {
+    max-width: 44rem;
+    margin: 0 auto;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    margin: 3rem auto 0 auto;
+    max-width: 44rem;
+    font-size: 2rem;
+    line-height: 1.5;
+    font-family: "Raleway", sans-serif;
+  }
+
+  p {
+    margin: 1rem auto 0 auto;
+    font-size: 0.9rem;
+    text-align: center;
+    max-width: 30rem;
+    line-height: 1.5;
+  }
+
+  button {
+    cursor: pointer;
+    display: block;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 1rem;
+    margin: 2rem auto 0 auto;
+    width: 15rem;
+    height: 3rem;
+    background: linear-gradient(to right, $ctaCyan, $ctaBlue);
+    border-style: none;
+    border-radius: 1.5rem;
+
+    &:hover {
+      background: $ctaBlue;
+    }
+  }
+}
