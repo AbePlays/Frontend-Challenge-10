@@ -30,3 +30,21 @@ nav {
     }
   }
 }
+
+@media (max-width: 900px) {
+  nav {
+    padding: 3rem 2rem;
+    img {
+      width: 8rem;
+    }
+    .links {
+      a {
+        font-size: 0.75rem;
+
+        &:not(:first-child) {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

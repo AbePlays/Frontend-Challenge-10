@@ -33,6 +33,21 @@ nav .links a:hover {
   text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+  nav {
+    padding: 3rem 2rem;
+  }
+  nav img {
+    width: 8rem;
+  }
+  nav .links a {
+    font-size: 0.75rem;
+  }
+  nav .links a:not(:first-child) {
+    margin-left: 1rem;
+  }
+}
+
 .hero {
   background-color: #1c2431;
   padding-bottom: 5rem;
@@ -415,6 +430,7 @@ nav .links a:hover {
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  overflow: hidden;
   height: 100%;
   width: 100%;
 }
