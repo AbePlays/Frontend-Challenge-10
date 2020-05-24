@@ -10,8 +10,12 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 5rem;
     width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+
     .feature {
       color: white;
       text-align: center;

@@ -101,8 +101,11 @@ nav .links a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 5rem;
   width: 100%;
+}
+
+.features .features-group:not(:last-child) {
+  margin-bottom: 5rem;
 }
 
 .features .features-group .feature {
@@ -123,6 +126,48 @@ nav .links a:hover {
   font-size: 0.8rem;
 }
 
+.moto {
+  padding: 10rem 5rem 0 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #181f2a;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.moto .moto-text {
+  padding: 0 5rem;
+  color: white;
+}
+
+.moto .moto-text h1 {
+  max-width: 20rem;
+  font-family: "Raleway", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+}
+
+.moto .moto-text p {
+  font-size: 1rem;
+}
+
+.moto .moto-text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.moto .moto-text a {
+  color: #65e2d9;
+}
+
+.moto .moto-text a img {
+  margin-left: 0.3rem;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -135,6 +180,10 @@ body {
   font-size: 16px;
   height: 100%;
   width: 100%;
+}
+
+body p {
+  opacity: 0.7;
 }
 
 .attribution {

@@ -1,0 +1,34 @@
+@import "variables";
+
+.moto {
+  padding: 10rem 5rem 0 5rem;
+  display: flex;
+  background-color: $backgroundBlue;
+  justify-content: space-between;
+  align-items: center;
+
+  .moto-text {
+    padding: 0 5rem;
+    color: white;
+    h1 {
+      max-width: 20rem;
+      font-family: "Raleway", sans-serif;
+      margin-bottom: 1rem;
+      font-size: 2.3rem;
+    }
+
+    p {
+      font-size: 1rem;
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    a {
+      color: $ctaCyan;
+      img {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
