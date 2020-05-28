@@ -355,6 +355,10 @@ nav .links a:hover {
 }
 
 @media (max-width: 1100px) {
+  .testimonial {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .testimonial .contact-card {
     padding: 4rem 1rem;
   }
@@ -499,6 +503,9 @@ nav .links a:hover {
   }
   .contact .cards .card2 {
     margin-bottom: 4rem;
+  }
+  .contact .cards .card2 .card2-item img {
+    margin-right: 2rem;
   }
   .contact .cards .card3 {
     display: block;
